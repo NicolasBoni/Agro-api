@@ -1,0 +1,20 @@
+// prisma/schema.prisma
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+
+  model Estufa {
+  id           Int      @id @default(autoincrement())  // ID da estufa
+  nomeEstufa   String   // Nome da estufa
+  temperatura  Float    // Temperatura da estufa
+  umidade      Float    // Umidade da estufa
+  datahora     DateTime @default(now())  // Data e hora da medição
+}
+
