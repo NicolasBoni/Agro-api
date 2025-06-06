@@ -35,7 +35,7 @@ app.use((req, res) => {
 // ─── CONFIGURAÇÃO DA PORTA SERIAL (ARDUINO) ─────────────────────────────────
 
 // 1) Substitua este valor pela porta serial do seu Arduino:
-//    Exemplo Windows: "COM3", Linux/Mac: "/dev/ttyACM0" ou "/dev/ttyUSB0"
+//    Exemplo Windows: "COM3",
 const portPath = "COM3";  
 
 // 2) Cria a instância do SerialPort a 9600 bauds (igual ao baud do Arduino)
